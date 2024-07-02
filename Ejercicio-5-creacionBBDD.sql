@@ -43,3 +43,4 @@ CREATE TABLE Facturas (
     CONSTRAINT fk_Facturas_Empleados FOREIGN KEY (id_empleado) REFERENCES Empleados (id_empleado),
     CONSTRAINT fk_Facturas_Clientes FOREIGN KEY (id_cliente) REFERENCES Clientes (id_cliente)
     );
+   

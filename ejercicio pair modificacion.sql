@@ -1,4 +1,4 @@
---EJERCICIO 1:
+-- EJERCICIO 1:
 
 ALTER TABLE zapatillas
 	ADD COLUMN marca VARCHAR (45) NOT NULL;
@@ -13,7 +13,7 @@ ALTER TABLE clientes
 ALTER TABLE facturas
 	ADD COLUMN total FLOAT;
     
---EJERCICIO 2:
+-- EJERCICIO 2:
 
 INSERT INTO zapatillas
 	VALUES(1, 'XQYUN', 'Negro', 'Nike', 42),
@@ -35,3 +35,6 @@ INSERT INTO facturas
 	VALUES(1, 123, '2001-12-11', 1, 2, 1, 54.98),
     (2, 1234, '2005-05-23', 1, 1, 3, 89.91),
     (3, 'Carmen', 298463759, 'carmen@email.com', 'Calle del color', 'Vigo', 'Pontevedra', '23456');
+
+
+    
