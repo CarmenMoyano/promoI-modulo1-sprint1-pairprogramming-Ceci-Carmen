@@ -59,4 +59,34 @@ SELECT order_id, unit_price * quantity AS ImporteTotal
     FROM order_details
     ORDER BY ImporteTotal DESC    
     LIMIT 3;
+
+-- Ejercicio 14
+-- Los pedidos que están entre las posiciones 5 y 10 de nuestro ranking:
+-- Ahora, no sabemos bien por qué razón, desde el departamento de Ventas nos piden seleccionar el ID de los pedidos situados entre la 5 y la 10 mejor 
+-- posición en cuanto al coste económico total ImporteTotal.
+-- 💡 Pista 💡 Usa LIMIT y OFFSET para mostrar los resultados.
+
+
     
+-- Ejericio 15
+-- Qué categorías tenemos en nuestra BBDD:De cara a ver cómo de diversificado está el negocio, se nos solicita una lista de 
+-- las categorías que componen los tipos de pedido de la empresa. Queremos que la lista de resultado sea renombrada como "NombreDeCategoria".
+
+-- Ejercicio 16
+-- Selecciona envios con retraso: Nos hacen llegar desde la dirección la preocupación acerca del cumplimiento de las fechas de envío. 
+-- Últimamente se están dando retrasos en muchas entregas y por ello se busca realizar la acción preventiva de enviar los paquetes con varios días 
+-- adicionales de antelacion. Para comenzar a planear esos envíos anticipados, nos piden conocer cuál sería la fecha de envío (ShippedDate)
+-- de los pedidos almacenados en la base de datos, si estos sufrieran un retraso de 5 días. Nos piden mostrar la nueva fecha renombrada como FechaRetrasada.
+-- 💡 Pista 💡 Para realizar lo anterior, busca documentación de la función DATE_ADD para MySQL.
+
+
+-- Ejercicio 17
+-- Selecciona los productos más rentables: Gracias a un análisis realizado en los últimos meses en la empresa, 
+-- se ha comprobado que el rango de productos que puede dar más beneficios parece ser el de aquellos con un precio mayor o igual a 15 dólares,
+-- pero menor o igual que 50 dólares. Selecciona los datos de ese rango de productos usando el operador BETWEEN.
+
+
+
+-- Ejercicio 18
+-- Selecciona los productos con unos precios dados: Queremos conocer los datos de los productos que tengan exactamente un precio de 18, 19 o 20 dólares
+-- (un rango muy concreto de precios del que la empresa quiere maximizar sus ventas en un futuro). Usa IN para conseguirlo de manera eficiente.
