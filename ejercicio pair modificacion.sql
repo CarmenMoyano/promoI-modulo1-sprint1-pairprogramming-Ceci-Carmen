@@ -36,5 +36,37 @@ INSERT INTO facturas
     (2, 1234, '2005-05-23', 1, 1, 3, 89.91),
     (3, 'Carmen', 298463759, 'carmen@email.com', 'Calle del color', 'Vigo', 'Pontevedra', '23456');
 
+-- EJERCICIO 3
+-- De nuevo nos hemos dado cuenta que hay algunos errores en la inserción de datos. En este ejercicios los actualizaremos para que nuestra BBDD este perfectita.
+-- Tabla zapatillas
+-- En nuestra tienda no vendemos zapatillas Rosas... ¿Cómo es posible que tengamos zapatillas de color rosa? 🤔 En realidad esas zapatillas son amarillas.
+INSERT INTO zapatillas (modelo, color, marca, talla)
+	VALUES
+		('XQYUN', 'Negro', 'Nike', 42),
+		('UOPMN', 'Amarillas', 'Nike', 39),  
+		('OPNYT', 'Verde', 'Adidas', 35);    
+-- Tabla empleados
+-- Laura se ha cambiado de ciudad y ya no vive en Alcobendas, se fue cerquita del mar, ahora vive en A Coruña.
+UPDATE empleados
+	SET tienda = 'A Coruña'
+	WHERE id_empleado = 1;
+
+-- Tabla clientes
+-- El Numero de telefono de Monica esta mal!!! Metimos un digito de más. En realidad su número es: 123456728
+UPDATE clientes
+	SET numero_telefono = '123456728'
+	WHERE id_cliente = 1;
+
+-- Tabla facturas
+-- El total de la factura de la zapatilla cuyo id es 2 es incorrecto. En realidad es: 89,91.
+
+UPDATE facturas
+	SET total = 89.91
+	WHERE id_factura = 2;
+
+
+
+
+
 
     
